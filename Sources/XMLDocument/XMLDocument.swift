@@ -36,7 +36,6 @@ open class XMLDocument: XMLNode {
     
     private let _docPtr: xmlDocPtr?
     
-    @objc
     public init(data: Data, options: Int) throws {
         let encoding: String.Encoding = .utf8
         let xml = String(data: data, encoding: encoding)
